@@ -1,0 +1,11 @@
+---
+- hosts: 'aws_ec2'
+  remote_user: 'ubuntu'
+  gather_facts: false
+  roles: 
+    - role: 'php'
+    - role: 'mysql'
+    - role: 'nginx'
+    - role: 'wordpress'
+
+  
